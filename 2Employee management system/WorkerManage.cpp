@@ -28,6 +28,6 @@ void WorkerManage::exit() {
 	cout << "欢迎您下次使用！" << endl;
 }
 
-void WorkerManage::add_Employee() {
-
-}
+//void WorkerManage::add_Employee() {
+//
+//}

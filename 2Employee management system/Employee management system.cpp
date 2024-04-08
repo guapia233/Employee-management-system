@@ -5,32 +5,24 @@ using namespace std;
 #include"Employee.h"
 #include"Manager.h"
 #include"Boss.h"
+  
 
-void test01() {
+int main() {
 	Worker* worker = NULL;
 	worker = new Employee(1, "张三", 1);
 	worker->showInfo();
 	delete worker;
 
-	/*worker = new Manager(2, "李四", 2);
+	worker = new Boss(2, "小吕", 1);
 	worker->showInfo();
 	delete worker;
-
-	worker = new Boss(3, "王五", 3);
-	worker->showInfo();
-	delete worker;*/
-}
-
-int main() {
-	test01();
-
 	/*WorkerManage wm;
 	wm.show_Menu();
 
 	int choice = 0;
 	cout << "请输入你的选项：";
-	cin >> choice;
-	switch (choice) {
+	//cin >> choice;
+	//switch (choice) {
 		case 0: 
 			wm.exit();
 			return 0;
