@@ -8,26 +8,19 @@ using namespace std;
   
 
 int main() {
-	Worker* worker = NULL;
-	worker = new Employee(1, "张三", 1);
-	worker->showInfo();
-	delete worker;
-
-	worker = new Boss(2, "小吕", 1);
-	worker->showInfo();
-	delete worker;
-	/*WorkerManage wm;
-	wm.show_Menu();
-
+	WorkerManage wm;
 	int choice = 0;
-	cout << "请输入你的选项：";
-	//cin >> choice;
-	//switch (choice) {
-		case 0: 
+
+	while (true) {
+		wm.show_Menu();
+		cout << "请输入你的选项：";
+		cin >> choice;
+		switch (choice) {
+		case 0:
 			wm.exit();
 			return 0;
 		case 1:
-
+			wm.add_Emp();
 			break;
 		case 2:
 
@@ -50,9 +43,10 @@ int main() {
 		default:
 			system("cls");
 			break;
-	}
+		}
 
+		
+	}
 	system("pause");
-	*/
 	return 0;
 }
