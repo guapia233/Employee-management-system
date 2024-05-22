@@ -126,3 +126,4 @@ void WorkerManage::save()
 
 	ofs.close();
 }
+//lgp
