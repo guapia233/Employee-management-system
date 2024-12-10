@@ -9,3 +9,4 @@ public:
 	virtual void showInfo();
 	virtual string getDeptName();
 };
+//test
